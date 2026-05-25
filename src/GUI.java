@@ -35,5 +35,21 @@ public class GUI extends JFrame {
         passwordLengthLebel.setBounds(25, 215, 272, 39);
         add(passwordLengthLebel);
 
+        JToggleButton uppercaseToggle = new JToggleButton("Uppercase");
+        uppercaseToggle.setBounds(25, 302, 225, 56);
+        add(uppercaseToggle);
+
+        JToggleButton lowercaseToggle = new JToggleButton("Lowercase");
+        lowercaseToggle.setBounds(282, 302, 225, 56);
+        add(lowercaseToggle);
+
+        JToggleButton numbersToggle = new JToggleButton("Numbers");
+        numbersToggle.setBounds(25, 373, 225, 56);
+        add(numbersToggle);
+
+        JToggleButton symbolToggle = new JToggleButton("Symbols");
+        symbolToggle.setBounds(282, 373, 225, 56);
+        add(symbolToggle);
+
     }
 }
