@@ -23,9 +23,9 @@ public class GUI extends JFrame {
 
         JTextArea passwordOutput = new JTextArea();
         passwordOutput.setEditable(false);
-        passwordOutput.setFont(new Font(("Dialog", Font.BOLD, 32)));
+        passwordOutput.setFont(new Font("Dialog", Font.BOLD, 32));
 
-        JScrollPane passworrdOutputPane = JScrollPane(passwordOutput);
+        JScrollPane passworrdOutputPane = new JScrollPane(passwordOutput);
         passworrdOutputPane.setBounds(25, 97, 479, 70);
         passworrdOutputPane.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         add(passworrdOutputPane);
