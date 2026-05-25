@@ -30,6 +30,10 @@ public class GUI extends JFrame {
         passworrdOutputPane.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         add(passworrdOutputPane);
 
+        JLabel passwordLengthLebel = new JLabel("Password Length");
+        passwordLengthLebel.setFont(new Font("Dialog", Font.PLAIN, 32));
+        passwordLengthLebel.setBounds(25, 215, 272, 39);
+        add(passwordLengthLebel);
 
     }
 }
