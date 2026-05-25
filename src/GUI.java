@@ -35,6 +35,11 @@ public class GUI extends JFrame {
         passwordLengthLebel.setBounds(25, 215, 272, 39);
         add(passwordLengthLebel);
 
+        JTextArea passwordLengthInputArea = new JTextArea();
+        passwordLengthInputArea.setFont(new Font("Dialog", Font.PLAIN, 32));
+        passwordLengthInputArea.setBorder((BorderFactory.createLineBorder(Color.BLACK)));
+        add(passwordLengthInputArea);
+
         JToggleButton uppercaseToggle = new JToggleButton("Uppercase");
         uppercaseToggle.setBounds(25, 302, 225, 56);
         add(uppercaseToggle);
