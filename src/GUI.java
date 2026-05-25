@@ -1,8 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
 public class GUI extends JFrame {
+    private PasswordGenerator passwordGenerator;
     public GUI() {
         super("Password Generator");
         setSize(540, 570);
@@ -11,6 +14,7 @@ public class GUI extends JFrame {
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        passwordGenerator = new PasswordGenerator();
         addGUIComponents();
     }
 
@@ -64,6 +68,19 @@ public class GUI extends JFrame {
         JButton generateButton = new JButton("Generate");
         generateButton.setFont(new Font("Dialog", Font.PLAIN,32));
         generateButton.setBounds(155, 477, 222, 41);
+        generateButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(passwordLengthInputArea.getText().length() <= 0) return;
+                boolean anyToggleSelcted = lowercaseToggle.isSelected() || uppercaseToggle.isSelected() || numbersToggle.isSelected() || symbolToggle.isSelected();
+                int psswordLength = Integer.parseInt(passwordLengthInputArea.getText());
+                if (anyToggleSelcted) {
+                    String generatedPassword = passwordGenerator.generatePassword(psswordLength, uppercaseToggle.isSelected(),lowercaseToggle.isSelected(), numbersToggle.isSelected(), symbolToggle.isSelected());
+
+                    passwordOutput.setText(generatedPassword);
+                }
+            }
+        });
         add(generateButton);
     }
 }
