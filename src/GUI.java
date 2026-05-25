@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 
-public class Main extends JFrame {
+public class GUI extends JFrame {
     public passwordGenerateorGUI() {
         super("Password Generator");
         setSize(540, 570);
@@ -9,6 +9,6 @@ public class Main extends JFrame {
         setLayout(null);
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocationRelativeTo();
+        setLocationRelativeTo(null);
     }
 }
