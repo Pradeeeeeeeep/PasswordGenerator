@@ -15,7 +15,11 @@ public class GUI extends JFrame {
     }
 
     private void addGUIComponents(){
-        JLabel titleLable = new JLabel("Password Generatro");
+        JLabel titleLable = new JLabel("Password Generator");
         titleLable.setFont(new Font("Dialog", Font.BOLD, 32));
+        titleLable.setHorizontalAlignment(SwingConstants.CENTER);
+        titleLable.setBounds(0, 10, 540, 39);
+        add(titleLable);
+
     }
 }
