@@ -2,7 +2,7 @@ import javax.swing.*;
 
 
 public class GUI extends JFrame {
-    public passwordGenerateorGUI() {
+    public GUI() {
         super("Password Generator");
         setSize(540, 570);
         setResizable(false);
