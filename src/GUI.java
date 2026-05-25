@@ -38,23 +38,32 @@ public class GUI extends JFrame {
         JTextArea passwordLengthInputArea = new JTextArea();
         passwordLengthInputArea.setFont(new Font("Dialog", Font.PLAIN, 32));
         passwordLengthInputArea.setBorder((BorderFactory.createLineBorder(Color.BLACK)));
+        passwordLengthInputArea.setBounds(310, 215, 192, 39);
         add(passwordLengthInputArea);
 
         JToggleButton uppercaseToggle = new JToggleButton("Uppercase");
+        uppercaseToggle.setFont(new Font("Dialog", Font.PLAIN, 26));
         uppercaseToggle.setBounds(25, 302, 225, 56);
         add(uppercaseToggle);
 
         JToggleButton lowercaseToggle = new JToggleButton("Lowercase");
+        lowercaseToggle.setFont(new Font("Dialog", Font.PLAIN, 26));
         lowercaseToggle.setBounds(282, 302, 225, 56);
         add(lowercaseToggle);
 
         JToggleButton numbersToggle = new JToggleButton("Numbers");
+        numbersToggle.setFont(new Font("Dialog", Font.PLAIN, 26));
         numbersToggle.setBounds(25, 373, 225, 56);
         add(numbersToggle);
 
         JToggleButton symbolToggle = new JToggleButton("Symbols");
+        symbolToggle.setFont(new Font("Dialog", Font.PLAIN, 26));
         symbolToggle.setBounds(282, 373, 225, 56);
         add(symbolToggle);
 
+        JButton generateButton = new JButton("Generate");
+        generateButton.setFont(new Font("Dialog", Font.PLAIN,32));
+        generateButton.setBounds(155, 477, 222, 41);
+        add(generateButton);
     }
 }
