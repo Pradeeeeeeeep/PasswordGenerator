@@ -1,7 +1,14 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Pradeep Kisk");
+import javax.swing.*;
+
+
+public class Main extends JFrame {
+    public passwordGenerateorGUI() {
+        super("Password Generator");
+        setSize(540, 570);
+        setResizable(false);
+        setLayout(null);
+
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocationRelativeTo();
     }
 }
