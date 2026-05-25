@@ -21,5 +21,15 @@ public class GUI extends JFrame {
         titleLable.setBounds(0, 10, 540, 39);
         add(titleLable);
 
+        JTextArea passwordOutput = new JTextArea();
+        passwordOutput.setEditable(false);
+        passwordOutput.setFont(new Font(("Dialog", Font.BOLD, 32)));
+
+        JScrollPane passworrdOutputPane = JScrollPane(passwordOutput);
+        passworrdOutputPane.setBounds(25, 97, 479, 70);
+        passworrdOutputPane.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        add(passworrdOutputPane);
+
+
     }
 }
